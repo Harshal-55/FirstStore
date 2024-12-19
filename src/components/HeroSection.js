@@ -9,6 +9,22 @@ import category3 from "../assets/category3.png";
 import category4 from "../assets/category4.png";
 import category5 from "../assets/category5.png";
 import category6 from "../assets/category6.png";
+import businessimg1 from "../assets/skechers_usa_logo.svg.png";
+import businessimg2 from "../assets/wework_logo.svg.png";
+import businessimg3 from "../assets/soulcycle_logo.png.png";
+import businessimg4 from "../assets/figma_logo.svg.png";
+import businessimg5 from "../assets/google_logo.svg.png";
+import businessimg6 from "../assets/verano_logo.svg.png";
+import businessimg7 from "../assets/hugo_boss_icon.jpeg.png"
+import businessimg8 from "../assets/slack_logo.svg.png"
+import businessimg9 from "../assets/stripe_logo.svg.png";
+import businessimg10 from "../assets/microsoft_logo.svg.png";
+import solution1 from "../assets/solution1.png";
+import solution2 from "../assets/solution2.png";
+import solution3 from "../assets/solution3.png";
+import solution4 from "../assets/solution4.png";
+import solution5 from "../assets/solution5.png";
+
 
 const HeroSection = () => {
   return (
@@ -16,14 +32,14 @@ const HeroSection = () => {
       {/* Hero Section */}
       <div className="flex flex-col lg:flex-row items-center justify-between px-2 py-3 lg:px-6 lg:py-10 mx-1 lg:mx-2">
         {/* Left Section */}
-        <div className="w-full lg:w-1/2 space-y-4 mx-1 lg:mx-8">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-snug text-gray-800">
-            Launch Your <br /> Online Store with <br /> FirstStore
+        <div className="w-full lg:w-1/2 space-y-6 mx-1 lg:mx-8">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-7xl font-bold leading-snug text-gray-800">
+            Launch Your Online Store with FirstStore
           </h1>
           <p className="text-base sm:text-lg lg:text-lg text-gray-600">
             Unleash Your Business Potential with FirstStore: Your All-in-One Solution for Seamless Online and Offline Business Management.
           </p>
-          <button className="bg-blue-600 text-white px-4 py-2 rounded-full text-sm sm:text-base lg:text-lg">
+          <button className="bg-[#071C6D] text-white px-4 py-2 rounded-full text-sm sm:text-base lg:text-lg">
             Get Started
           </button>
           {/* Customer Rating */}
@@ -83,14 +99,89 @@ const HeroSection = () => {
             Popular Categories
         </h1>
         <div className="flex flex-wrap justify-center space-x-8">
+
         <img src={category2} className="w-1/5 sm:w-1/6 border-2 border-white" alt="Category 2" />
         <img src={category3} className="w-1/5 sm:w-1/6 border-2 border-white" alt="Category 3" />
         <img src={category4} className="w-1/5 sm:w-1/6 border-2 border-white" alt="Category 4" />
         <img src={category5} className="w-1/5 sm:w-1/6 border-2 border-white" alt="Category 5" />
         <img src={category6} className="w-1/5 sm:w-1/6 border-2 border-white" alt="Category 6" />
         </div>
+        <div className="flex flex-col items-center">
+        {/* Heading */}
+        <h2 className="font-sans text-xl sm:text-xl lg:text-4xl font-bold leading-snug text-[#071C6D] mt-2 lg:mt-32 text-center mb-2 lg:mb-28">
+          A Reliable Growth Partner For Businesses Of All Sizes
+        </h2>
+        
+        {/* Images Section */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-16 mt-6">
+          <img
+            src={businessimg1}
+            className="w-full h-auto rounded-lg border-2 border-white"
+            alt="Category 1"
+          />
+          <img
+            src={businessimg2}
+            className="w-full h-auto rounded-lg border-2 border-white"
+            alt="Category 2"
+          />
+          <img
+            src={businessimg3}
+            className="w-full h-auto rounded-lg border-2 border-white"
+            alt="Category 3"
+          />
+          <img
+            src={businessimg4}
+            className="w-full h-auto rounded-lg border-2 border-white"
+            alt="Category 4"
+          />
+          <img
+            src={businessimg5}
+            className="w-full h-auto rounded-lg border-2 border-white"
+            alt="Category 5"
+          />
+          <img
+            src={businessimg6}
+            className="w-full h-auto rounded-lg border-2 border-white"
+            alt="Category 6"
+          />
+          <img
+            src={businessimg7}
+            className="w-full h-auto rounded-lg border-2 border-white"
+            alt="Category 7"
+          />
+          <img
+            src={businessimg8}
+            className="w-full h-auto rounded-lg border-2 border-white"
+            alt="Category 8"
+          />
+          <img
+            src={businessimg9}
+            className="w-full h-auto rounded-lg border-2 border-white"
+            alt="Category 9"
+          />
+          <img
+            src={businessimg10}
+            className="w-full h-auto rounded-lg border-2 border-white"
+            alt="Category 10"
+          />
+        </div>
+      </div>
+      <div className="container mx-auto px-4">
+        <h2 className="text-5xl font-bold text-start mb-10 mt-10 mx-10">Solutions</h2>
+        <div className="flex flex-wrap justify-center space-x-6">
+    <img src={solution1} className="w-1/4 sm:w-1/5 md:w-auto rounded-lg border-2 border-white mb-2 md:mb-4 mx-1 md:mx-2 transform transition-transform duration-300 hover:translate-y-1" alt="solution 1" />
+    <img src={solution2} className="w-1/4 sm:w-1/5 md:w-auto rounded-lg border-2 border-white mb-2 md:mb-4 mx-1 md:mx-2 transform transition-transform duration-300 hover:-translate-y-1" alt="solution 2" />
+    <img src={solution3} className="w-1/4 sm:w-1/5 md:w-auto rounded-lg border-2 border-white mb-2 md:mb-4 mx-1 md:mx-2 transform transition-transform duration-300 hover:translate-y-1" alt="solution 3" />
+    <img src={solution4} className="w-1/4 sm:w-1/5 md:w-auto rounded-lg border-2 border-white mb-2 md:mb-4 mx-1 md:mx-2 transform transition-transform duration-300 hover:-translate-y-1" alt="solution 4" />
+    <img src={solution5} className="w-1/4 sm:w-1/5 md:w-auto rounded-lg border-2 border-white mb-2 md:mb-4 mx-1 md:mx-2 transform transition-transform duration-300 hover:translate-y-1" alt="solution 5" />
+</div>
+
+      
+      </div>
+      
 
       </div>
+
     </div>
   );
 };
