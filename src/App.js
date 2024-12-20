@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import LandingPage from "./components/LandingPage"; 
 import { AnimatePresence, motion } from "framer-motion"; 
+import PricingSection from "./components/PricingSection";
 
 const pageVariants = {
   initial: { opacity: 0, x: "100%" },
@@ -32,6 +33,20 @@ const AnimatedRoutes = () => {
               transition={pageTransition}
             >
               <LandingPage />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/pricing-section"
+          element={
+            <motion.div
+              initial="initial"
+              animate="in"
+              exit="out"
+              variants={pageVariants}
+              transition={pageTransition}
+            >
+              <PricingSection />
             </motion.div>
           }
         />

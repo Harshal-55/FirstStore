@@ -29,7 +29,7 @@ const Navbar = () => {
           <a href="/about-us" className="block text-black font-medium text-base md:text-lg lg:text-xl hover:text-blue-600 py-2 md:py-0">ABOUT</a>
         </li>
         <li>
-          <a href="/pricing" className="block text-black font-medium text-base md:text-lg lg:text-xl hover:text-blue-600 py-2 md:py-0">PRICING</a>
+          <a href="/pricing-section" className="block text-black font-medium text-base md:text-lg lg:text-xl hover:text-blue-600 py-2 md:py-0">PRICING</a>
         </li>
         <li>
           <a href="/blog" className="block text-black font-medium text-base md:text-lg lg:text-xl hover:text-blue-600 py-2 md:py-0">BLOG</a>

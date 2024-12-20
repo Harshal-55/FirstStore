@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import HeroSection from "./HeroSection";
 import WhatWeOffer from "./WhatWeOffer";
+import LocalStoresSection from "./LocalStoresSection";
 import SpendingEfficiencySection from "./SpendingEfficiencySection";
 
 const LandingPage = () => {
@@ -10,6 +11,7 @@ const LandingPage = () => {
         <Navbar />
         <HeroSection />
         <WhatWeOffer />
+        <LocalStoresSection />
         <SpendingEfficiencySection />
     </div>
 
