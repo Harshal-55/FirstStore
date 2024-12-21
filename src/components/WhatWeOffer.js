@@ -10,57 +10,58 @@ import entrep2 from "../assets/entrep2.png";
 const WhatWeOffer = () => {
   return (
     <div>
-    <div className="container mx-auto px-4 py-8">
-      {/* Heading Section */}
-      <div className="text-center mb-10">
-        <h2 className="text-xl sm:text-2xl lg:text-4xl font-bold text-[#071C6D] mb-4">
-          What We Offer!!
-        </h2>
-        <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-2xl mx-auto">
-          Experience the modern approach to procurement and payments with Order.co. Simplify every aspect of your
-          business purchasing, from product sourcing to scaling across locations.
+  <div className="container mx-auto px-4 py-8">
+    {/* Heading Section */}
+    <div className="text-center mb-10">
+      <h2 className="text-xl sm:text-2xl lg:text-4xl font-bold text-[#071C6D] mb-4">
+        What We Offer!!
+      </h2>
+      <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-2xl mx-auto">
+        Experience the modern approach to procurement and payments with Order.co. Simplify every aspect of your
+        business purchasing, from product sourcing to scaling across locations.
+      </p>
+    </div>
+
+    {/* Card Section */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:mx-44">
+      {/* Card 1 */}
+      <div className="border-2 border-blue-300 rounded-lg p-4 flex flex-col items-start text-start">
+        <div className="text-blue-500 mb-4">
+          <img src={offer3} alt="Upload your product" className="h-20 w-20 sm:h-32 sm:w-32" />
+        </div>
+        <h3 className="text-base sm:text-lg font-bold text-blue-600 mb-2">Upload Your Product</h3>
+        <p className="text-sm text-gray-600">
+          Provide the product details along with comprehensive information, including photos, videos, variations,
+          product descriptions, promotions, and more.
         </p>
       </div>
 
-      {/* Card Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:mx-32">
-        {/* Card 1 */}
-        <div className="border-2 border-blue-300 rounded-lg p-6 flex flex-col items-start text-start mr-4">
-          <div className="text-blue-500 mb-4">
-          <img src={offer3} alt="Description of your " className="h-32 w-32"/>
-          </div>
-          <h3 className="text-lg font-bold text-blue-600 mb-2">Upload Your Product</h3>
-          <p className="text-sm text-gray-600">
-            Provide the product details along with comprehensive information, including photos, videos, variations,
-            product descriptions, promotions, and more.
-          </p>
+      {/* Card 2 */}
+      <div className="border-2 border-yellow-300 rounded-lg p-4 flex flex-col items-start text-start">
+        <div className="text-yellow-500 mb-4">
+          <img src={offer2} alt="Setup your store" className="h-20 w-20 sm:h-32 sm:w-32" />
         </div>
+        <h3 className="text-base sm:text-lg font-bold text-yellow-600 mb-2">Setup Your Store</h3>
+        <p className="text-sm text-gray-600">
+          Add your logo, upload a banner, and customize your store theme to align with your brand identity, all without
+          needing to write any code.
+        </p>
+      </div>
 
-        {/* Card 2 */}
-        <div className="border-2 border-yellow-300 rounded-lg p-6 flex flex-col items-start text-start mx-4">
-          <div className="text-yellow-500 mb-4">
-          <img src={offer2} alt="Description of your " className="h-32 w-32"/>
-          </div>
-          <h3 className="text-lg font-bold text-yellow-600 mb-2">Setup Your Store</h3>
-          <p className="text-sm text-gray-600">
-            Add your logo, upload a banner, and customize your store theme to align with your brand identity, all without
-            needing to write any code.
-          </p>
-        </div>
-
-        {/* Card 3 */}
-        <div className="border-2 border-green-300 rounded-lg p-6 flex flex-col items-start text-start ml-4">
+      {/* Card 3 */}
+      <div className="border-2 border-green-300 rounded-lg p-4 flex flex-col items-start text-start">
         <div className="text-green-500 mb-4">
-          <img src={offer1} alt="Description of your " className="h-32 w-32"/>
+          <img src={offer1} alt="Launch your store" className="h-20 w-20 sm:h-32 sm:w-32" />
         </div>
-          <h3 className="text-lg font-bold text-green-600 mb-2">The Launch Continues</h3>
-          <p className="text-sm text-gray-600">
-            Effortlessly launch your online store, validate your business, and gain market share faster than your
-            competitors.
-          </p>
-        </div>
+        <h3 className="text-base sm:text-lg font-bold text-green-600 mb-2">The Launch Continues</h3>
+        <p className="text-sm text-gray-600">
+          Effortlessly launch your online store, validate your business, and gain market share faster than your
+          competitors.
+        </p>
       </div>
     </div>
+  </div>
+
 
     {/* you need to know section*/}
 
@@ -108,32 +109,7 @@ const WhatWeOffer = () => {
               alt="Shopping Cart"
               className="w-full max-w-md mx-auto lg:mr-auto"
             />
-            {/*
-            <div className="absolute bottom-4 right-4 bg-white shadow-lg p-4 rounded-md">
-              <h4 className="font-semibold text-lg">
-                (5/7) Items Selected
-              </h4>
-              <ul className="mt-2 space-y-2 text-sm">
-                <li className="flex justify-between">
-                  <span>Fresh Veggies</span>
-                  <span>$2320</span>
-                </li>
-                <li className="flex justify-between">
-                  <span>Fresh Cherries</span>
-                  <span>$1500</span>
-                </li>
-              </ul>
-              <div className="mt-4 font-semibold">
-                <p>Total Price: $8,849</p>
-                <p className="text-sm text-gray-500">
-                  (+ $150 Shipping Charges)
-                </p>
-              </div>
-              <button className="mt-4 px-4 py-2 bg-[#071C6D] text-white rounded-md hover:bg-blue-700">
-                Checkout
-              </button>
-            </div>
-            */}
+           
             </div> 
           {/* Right Content */}
           <div className="lg:mx-6">

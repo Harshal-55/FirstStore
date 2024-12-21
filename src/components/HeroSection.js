@@ -166,15 +166,15 @@ const HeroSection = () => {
           />
         </div>
       </div>
-      <div className="container mx-auto px-4">
-        <h2 className="text-5xl font-bold text-start mb-10 mt-10 mx-10">Solutions</h2>
-        <div className="flex flex-wrap justify-center space-x-6">
-    <img src={solution1} className="w-1/4 sm:w-1/5 md:w-auto rounded-lg border-2 border-white mb-2 md:mb-4 mx-1 md:mx-2 transform transition-transform duration-300 hover:translate-y-1" alt="solution 1" />
-    <img src={solution2} className="w-1/4 sm:w-1/5 md:w-auto rounded-lg border-2 border-white mb-2 md:mb-4 mx-1 md:mx-2 transform transition-transform duration-300 hover:-translate-y-1" alt="solution 2" />
-    <img src={solution3} className="w-1/4 sm:w-1/5 md:w-auto rounded-lg border-2 border-white mb-2 md:mb-4 mx-1 md:mx-2 transform transition-transform duration-300 hover:translate-y-1" alt="solution 3" />
-    <img src={solution4} className="w-1/4 sm:w-1/5 md:w-auto rounded-lg border-2 border-white mb-2 md:mb-4 mx-1 md:mx-2 transform transition-transform duration-300 hover:-translate-y-1" alt="solution 4" />
-    <img src={solution5} className="w-1/4 sm:w-1/5 md:w-auto rounded-lg border-2 border-white mb-2 md:mb-4 mx-1 md:mx-2 transform transition-transform duration-300 hover:translate-y-1" alt="solution 5" />
-</div>
+      <div className="container mx-auto px-2 lg:px-4">
+        <h2 className="text-5xl font-bold text-start mb-10 mt-10 lg:mx-10 mx-4">Solutions</h2>
+        <div className="flex flex-wrap justify-center space-x-3 lg:space-x-6">
+          <img src={solution1} className="w-1/4 sm:w-1/5 md:w-auto rounded-lg border-2 border-white mb-2 md:mb-4 mx-1 md:mx-2 transform transition-transform duration-300 hover:translate-y-1" alt="solution 1" />
+          <img src={solution2} className="w-1/4 sm:w-1/5 md:w-auto rounded-lg border-2 border-white mb-2 md:mb-4 mx-1 md:mx-2 transform transition-transform duration-300 hover:-translate-y-1" alt="solution 2" />
+          <img src={solution3} className="w-1/4 sm:w-1/5 md:w-auto rounded-lg border-2 border-white mb-2 md:mb-4 mx-1 md:mx-2 transform transition-transform duration-300 hover:translate-y-1" alt="solution 3" />
+          <img src={solution4} className="w-1/4 sm:w-1/5 md:w-auto rounded-lg border-2 border-white mb-2 md:mb-4 mx-1 md:mx-2 transform transition-transform duration-300 hover:-translate-y-1" alt="solution 4" />
+          <img src={solution5} className="w-1/4 sm:w-1/5 md:w-auto rounded-lg border-2 border-white mb-2 md:mb-4 mx-1 md:mx-2 transform transition-transform duration-300 hover:translate-y-1" alt="solution 5" />
+      </div>
 
       
       </div>
