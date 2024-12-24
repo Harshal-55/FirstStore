@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from "react-route
 import LandingPage from "./components/LandingPage"; 
 import { AnimatePresence, motion } from "framer-motion"; 
 import PricingSection from "./components/PricingSection";
+import TermsOfUse from "./components/TermsOfUse";
+import AboutUs from "./components/AboutUs";
 
 const pageVariants = {
   initial: { opacity: 0, x: "100%" },
@@ -37,6 +39,20 @@ const AnimatedRoutes = () => {
           }
         />
         <Route
+          path="/about-us"
+          element={
+            <motion.div
+              initial="initial"
+              animate="in"
+              exit="out"
+              variants={pageVariants}
+              transition={pageTransition}
+            >
+              <AboutUs />
+            </motion.div>
+          }
+        />
+        <Route
           path="/pricing-section"
           element={
             <motion.div
@@ -47,6 +63,20 @@ const AnimatedRoutes = () => {
               transition={pageTransition}
             >
               <PricingSection />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/terms-of-use"
+          element={
+            <motion.div
+              initial="initial"
+              animate="in"
+              exit="out"
+              variants={pageVariants}
+              transition={pageTransition}
+            >
+              <TermsOfUse />
             </motion.div>
           }
         />
