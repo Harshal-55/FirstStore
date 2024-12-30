@@ -5,6 +5,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import PricingSection from "./components/PricingSection";
 import TermsOfUse from "./components/TermsOfUse";
 import AboutUs from "./components/AboutUs";
+import PrivacyPolicy from "./components/PrivacyPolicy";
+import ContactUs from "./components/ContactUs";
 
 const pageVariants = {
   initial: { opacity: 0, x: "100%" },
@@ -77,6 +79,34 @@ const AnimatedRoutes = () => {
               transition={pageTransition}
             >
               <TermsOfUse />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/privacy-policy"
+          element={
+            <motion.div
+              initial="initial"
+              animate="in"
+              exit="out"
+              variants={pageVariants}
+              transition={pageTransition}
+            >
+              <PrivacyPolicy />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/contact-us"
+          element={
+            <motion.div
+              initial="initial"
+              animate="in"
+              exit="out"
+              variants={pageVariants}
+              transition={pageTransition}
+            >
+              <ContactUs />
             </motion.div>
           }
         />

@@ -63,21 +63,30 @@ const FAQ = () => {
         },
       ]
   return (
-    <div className='flex flex-col justify-center items-center p-6 mb-12'>
-        <h1 className='text-3xl text-[#081d6e] font-bold text-center py-12'>Discover FAQs,that are transorming the way <br /> we seek and share knowledge</h1>
-        <div className='flex gap-4'>
-            <div className='flex max-w-[50%] flex-col gap-4'>
-                {faqs1.map((faq, index) => (
-                    <FAQCard key={index} question={faq.question} answer={faq.answer} />
-                ))}
-            </div>
-            <div className='flex max-w-[50%] flex-col gap-4'>
-                {faqs2.map((faq, index) => (
-                    <FAQCard key={index} question={faq.question} answer={faq.answer} />
-                ))}
-            </div>
-        </div>
+    <div className="flex flex-col justify-center items-center p-4 sm:p-6 mb-8 sm:mb-12">
+    {/* Heading */}
+    <h1 className="text-2xl sm:text-3xl text-[#081d6e] font-bold text-center py-8 sm:py-12">
+      Discover FAQs that are transforming the way <br className="hidden sm:block" /> we seek and share knowledge
+    </h1>
+  
+    {/* FAQ Columns */}
+    <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+      {/* First Column */}
+      <div className="flex flex-col gap-4 w-full sm:max-w-[50%]">
+        {faqs1.map((faq, index) => (
+          <FAQCard key={index} question={faq.question} answer={faq.answer} />
+        ))}
+      </div>
+  
+      {/* Second Column */}
+      <div className="flex flex-col gap-4 w-full sm:max-w-[50%]">
+        {faqs2.map((faq, index) => (
+          <FAQCard key={index} question={faq.question} answer={faq.answer} />
+        ))}
+      </div>
     </div>
+  </div>
+  
   )
 }
 

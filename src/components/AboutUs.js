@@ -10,8 +10,16 @@ import FAQ from './FAQ'
 const AboutUs = () => {
   return (
     <div>
-        <img src="/public/hero.png" alt="" />
+        
         <Navbar />
+        {/* Background Image */}
+        <div className="relative w-full mb-10">
+            <img
+            src="/hero.png"
+            alt="Background"
+            className="w-full h-auto object-cover"
+            />
+        </div>
         <OurMission />
         <Mobile />
         <Reviews />

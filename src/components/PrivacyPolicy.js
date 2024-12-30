@@ -1,6 +1,6 @@
 import React from 'react'
-import Header from './components/Header';
-import IndexSidebar from './components/IndexSidebar';
+import Navbar from './Navbar';
+import IndexSidebar from './IndexSidebar';
 
 const PrivacyPolicy = () => {
   const sections = [
@@ -13,7 +13,7 @@ const PrivacyPolicy = () => {
   ];
   return (
     <div>
-      <Header />
+      <Navbar />
       <IndexSidebar 
       sections={sections}
       activeClassName="bg-blue"
