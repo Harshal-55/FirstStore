@@ -20,21 +20,50 @@ const Navbar = () => {
         <img src={FSLogo} alt="FS Logo" className="w-10 h-10" />
       </div>
 
-      {/* Hamburger Menu Button */}
-      <div className="md:hidden">
-        <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-black">
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      {/* Hamburger Button */}
+      <button
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+        className={`text-black p-2 rounded-full ${isMenuOpen ? "bg-white shadow-md" : ""} md:hidden`}
+        style={{ zIndex: 60 }} // Inline style for higher priority
+      >
+        {isMenuOpen ? (
+          <svg
+            className="w-6 h-6 absolute right-2 top-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
           </svg>
-        </button>
-      </div>
+        ) : (
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        )}
+      </button>
+
+    
 
       {/* Links and Buttons */}
       <ul
-        className={`flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 absolute md:static bg-white w-full md:w-auto left-0 md:left-auto top-16 md:top-0 transition-transform duration-300 transform ${
+        className={`flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 absolute md:static bg-white w-full md:w-auto left-0 md:left-auto top-0 md:top-0 transition-transform duration-300 transform ${
           isMenuOpen ? "translate-x-0" : "-translate-x-full"
-        } md:translate-x-0 inset-x-0 p-6 md:p-0 overflow-hidden`}
-      >
+        } md:translate-x-0 inset-x-0 p-6 md:p-0 overflow-hidden z-50 h-screen md:h-auto`}>
         <li>
           <a
             href="/"
