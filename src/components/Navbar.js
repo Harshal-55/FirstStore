@@ -14,7 +14,7 @@ const Navbar = () => {
   const isActive = (path) => location.pathname === path; 
 
   return (
-    <nav className="w-full container mx-auto flex justify-between items-center px-6 py-2 md:px-10 lg:px-20 xl:px-32 overflow-hidden">
+    <nav className="w-full container mx-auto flex justify-between items-center px-6 py-2 md:px-10 lg:px-20 xl:px-32 overflow-hidden overflow-x: auto ">
       {/* Logo */}
       <div className="flex items-center">
         <img src={FSLogo} alt="FS Logo" className="w-10 h-10" />
