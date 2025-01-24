@@ -19,6 +19,7 @@ jobs:
       
     - name: 🔨 Build Project
       run: |
+        unset CI
         npm install
         npm run build
     
