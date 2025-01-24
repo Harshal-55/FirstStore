@@ -20,7 +20,7 @@ const App = () => {
           <Route path="/terms-of-use" element={<TermsOfUse />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/contact-us" element={<ContactUs />} />
-          <Route path="/vendor-on-boarding" element={<VendorOnboarding />} />
+          <Route path="/vendor-onboarding" element={<VendorOnboarding />} />
         </Routes>
       </AnimatePresence>
     </Router>
