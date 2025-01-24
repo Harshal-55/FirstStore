@@ -31,6 +31,7 @@ export const VendorOnboarding = () => {
 
   return (
     <iframe
+     title="title"
       ref={iframeRef}
       src="https://dynamic-forms-git-master-xlongclaws-projects.vercel.app/forms/67921693fde725d5d9a24ad0"
       className="w-screen h-screen"
