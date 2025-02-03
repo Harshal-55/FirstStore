@@ -7,6 +7,7 @@ import AboutUs from "./components/AboutUs";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import ContactUs from "./components/ContactUs";
 import VendorOnboarding from "./components/VendorOnboarding/VendorOnboarding";
+import Forms from "./components/Forms";
 import { AnimatePresence } from "framer-motion";
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/vendor-onboarding" element={<VendorOnboarding />} />
+          <Route path="/forms/:form_title" element={<Forms />} />
         </Routes>
       </AnimatePresence>
     </Router>
